@@ -12,4 +12,4 @@ public interface Flyweight {
 }
 
 
-/* Manipulated brilliantly by Ryan Norman */
+/* Manipulated brilliantly by Ryan Norman */  
