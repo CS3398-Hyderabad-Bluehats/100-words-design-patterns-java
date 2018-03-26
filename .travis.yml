@@ -8,6 +8,7 @@ branches:
   only:
     - master
     - Development
+    - Scales-branch
 
 after_success:
   - mvn clean test jacoco:report coveralls:report
