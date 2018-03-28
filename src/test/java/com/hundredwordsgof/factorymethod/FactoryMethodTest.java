@@ -34,9 +34,7 @@ public class FactoryMethodTest {
 
     assertEquals("com.hundredwordsgof.factorymethod.ConcreteProductA",
         productA.getClass().getName());
-    assertEquals("com.hundredwordsgof.factorymethod.ConcreteProductB",
+    assertEquals("",
         productB.getClass().getName());
-
-    assertNotEquals(null, factory.factoryMethod(""));
   }
 }
