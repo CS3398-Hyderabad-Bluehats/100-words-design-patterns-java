@@ -25,6 +25,7 @@ public class FlyweightTest {
     assertNotEquals(flyweight1, flyweight2);
     assertEquals(flyweight1, flyweight3);
     assertNotEquals(flyweight2, flyweight3);
+    assertNotEquals(flyweight1, flyweight1);
 
     assertNotEquals(unsharedFlyweight1, unsharedFlyweight2);
     assertNotEquals(unsharedFlyweight1, unsharedFlyweight3);
