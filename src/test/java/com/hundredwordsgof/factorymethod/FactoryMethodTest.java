@@ -23,4 +23,20 @@ public class FactoryMethodTest {
 
     assertEquals(null, factory.factoryMethod(""));
   }
+  
+  @Test
+  public void testFactoryMethod2() {
+
+    Creator factory = new ConcreteCreator();
+
+    Product productA = factory.factoryMethod("A");
+    Product productB = factory.factoryMethod("B");
+
+    assertEquals("com.hundredwordsgof.factorymethod.ConcreteProductA",
+        productA.getClass().getName());
+    assertEquals("com.hundredwordsgof.factorymethod.ConcreteProductB",
+        productB.getClass().getName());
+
+    assertNotEquals(null, factory.factoryMethod(""));
+  }
 }
